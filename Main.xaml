@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1233.3333333333333,1523.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1233.3333333333333,1526" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -104,7 +104,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="514.6666666666666,1458.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="514.6666666666666,1461.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="password" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -115,13 +115,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="452.6666666666667,114" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[password]" PersistanceType="Enterprise" Target="SafeWatchLogin" Username="[username]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: 10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml" sap:VirtualizedContainerService.HintSize="452.6666666666667,1256.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2eeac4eb-e997-4c37-9d12-385c263c44ab" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: 10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml" sap:VirtualizedContainerService.HintSize="452.6666666666667,1259.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2eeac4eb-e997-4c37-9d12-385c263c44ab" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1014.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1017.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,7 +131,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml" CVScreenId="a5aff740-b87d-4e1c-b102-f2665fe0625c" CvElementArea="254, 276, 211, 28" CvType="InputBox" DesignTimeRectangle="258, 279, 207, 25" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl id='pageLoginForm:login_business:UserName' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='pageLoginForm:login_business:UserName' type='text' tag='INPUT' class='textField field' aaname='User name:' /&gt;" Guid="457344d0-c0ad-4407-ab95-f6001da3de63" InformativeScreenshot="8d6d2e5379e95284bda897bd76a93c9a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="a5aff740-b87d-4e1c-b102-f2665fe0625c" CvTextArea="122, 284, 83, 16" CvTextArgument="User name:" CvType="Text" DesignTimeRectangle="123, 282, 120, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl parentid='pageLoginForm:login_business:j_idt68' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl parentid='pageLoginForm:login_business:j_idt68' type='' tag='SPAN' class='label col1' aaname='User name:' check:innerText='User name:' /&gt;" Guid="53397024-247e-4824-9b2a-1fe01616ad0b" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -152,7 +152,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml" CVScreenId="a5aff740-b87d-4e1c-b102-f2665fe0625c" CvElementArea="254, 305, 211, 28" CvType="InputBox" DesignTimeRectangle="258, 307, 207, 25" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl id='pageLoginForm:login_business:Password' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='pageLoginForm:login_business:Password' type='password' tag='INPUT' class='textField field' aaname='Password:' /&gt;" Guid="71390da6-5e48-409e-939b-d3023361b473" InformativeScreenshot="9a014d6d51d0a5176b0adb7aa84825f3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='10.182.197.74:8081/PSSW/SWAF/jsp/login.xhtml' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="a5aff740-b87d-4e1c-b102-f2665fe0625c" CvTextArea="122, 311, 73, 18" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="123, 310, 120, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl parentid='pageLoginForm:login_business:j_idt72' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl parentid='pageLoginForm:login_business:j_idt72' type='' tag='SPAN' class='label col1' aaname='Password:' check:innerText='Password:' /&gt;" Guid="07cc4b82-bc72-4904-b59b-60d57c4742f7" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -184,7 +184,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,112" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Login was! successful&quot;]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,112" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Login was successful&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
